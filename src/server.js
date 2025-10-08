@@ -1,14 +1,25 @@
-import express from 'express'
-import dotenv from 'dotenv'
-dotenv.config()
-const app = express()
+import express from 'express';
+import dotenv from 'dotenv';
+import cors from 'cors';
+import taskRoutes from './routes/routes.js';
+import bodyParser from 'body-parser';
 
+dotenv.config();
+
+const app = express();
 const port = process.env.PORT;
+
+// Middlewares part
+app.use(cors());
+app.use(bodyParser.json());
+
 app.get('/', (req, res) => {
-    res.send({ success: true, message: 'server is running' })
-})
-// post a data
+    res.send('Build Our First TO-DO-LIST');
+});
+
+// define all Tasks base route 
+app.use("/api/todos", taskRoutes);
 
 app.listen(port, () => {
-    console.log(`Server is running:localhost:${port}`)
-})
+    console.log(` server is running on the port : ${port}`);
+});

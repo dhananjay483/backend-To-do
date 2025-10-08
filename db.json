@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": "3c6338cc-f15d-4d0b-b8c0-d38499a182cf",
+      "title": "Learn How to maintain a folder structure",
+      "isImportant": "High",
+      "isCompleted": "false",
+      "createdAt": "10/8/2025, 10:17:21 AM",
+      "updatedAt": "10/8/2025, 10:22:04 AM"
+    },
+    {
+      "id": "08f24f0c-de3a-4d35-a8e5-577ff2d2ae12",
+      "title": "Learn How to maintain naming Convention",
+      "isImportant": "High",
+      "isCompleted": "false",
+      "createdAt": "10/8/2025, 10:21:24 AM",
+      "updatedAt": "10/8/2025, 10:22:48 AM"
+    },
+    {
+      "id": "a84227e2-2ad0-41af-8fc6-022157d6abed",
+      "title": "Testing backend integration",
+      "isImportant": "High",
+      "isCompleted": false,
+      "createdAt": "10/8/2025, 10:21:27 AM",
+      "updatedAt": "10/8/2025, 10:21:27 AM"
+    }
+  ],
+  "err": {
+    "errno": -2,
+    "code": "ENOENT",
+    "syscall": "open",
+    "path": "/Users/itobuz/Documents/Dev/Backend-To_Do/db.json"
+  }
+}
