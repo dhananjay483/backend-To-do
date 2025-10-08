@@ -98,6 +98,7 @@ export const updateTodos = (req, res) => {
     if (!todo) {
         return res.status(404).json({ message: "To-Do Not Found", success: false });
     }
+    
     // add all fields
     if (title !== undefined) todo.title = title;
     if (isImportant !== undefined) todo.isImportant = isImportant;
