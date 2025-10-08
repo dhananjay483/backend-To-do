@@ -34,7 +34,7 @@ function writeDB(data) {
 
 // get all the task
 export const getTodos = (req, res) => {
-    const db = readDB(); // load from db.json()
+    const db = readDB(); // load data from db.json({})
     res.json({
         message: "Data Fetched Successfully!",
         todos: db.todos,
@@ -91,16 +91,7 @@ export const updateTodos = (req, res) => {
     const db = readDB();
     const { id } = req.params; // req the todo id which could be update 
     const { title, isImportant, isCompleted } = req.body; // fetch details
-    // if details will not have
-    if (!title) {
-        return res.status(401).json({ message: "Title is required", success: false })
-    }
-    if (!isImportant) {
-        return res.status(401).json({ message: "IsImportant is required", success: false })
-    }
-    if (!isCompleted) {
-        return res.status(401).json({ message: "isCompleted is required", success: false })
-    }
+    
 
     // all details fetch done then only 
     const todo = db.todos.find(t => t.id === id); // check if any id will match or not

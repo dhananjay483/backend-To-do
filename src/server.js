@@ -10,11 +10,11 @@ const app = express();
 const port = process.env.PORT;
 
 // Middlewares part
-app.use(cors());
-app.use(bodyParser.json());
+app.use(cors()); // cross origin blocks
+app.use(bodyParser.json()); 
 
 app.get('/', (req, res) => {
-    res.send('Build Our First TO-DO-LIST');
+    res.send('Build Our First TO DO APP');
 });
 
 // define all Tasks base route 
