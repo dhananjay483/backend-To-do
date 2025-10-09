@@ -4,7 +4,7 @@ import cors from 'cors';
 // import taskRoutes from './routes/routes.js';
 import bodyParser from 'body-parser';
 import connectDB from './config/db.js';
-import { errorMiddleware } from './error/ErrorHandler.js';
+import { errorHandler } from './error/ErrorHandler.js';
 dotenv.config();
 
 const app = express();
