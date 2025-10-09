@@ -1,23 +1,4 @@
-```
-├── 📁 database
-│ ├── 🗂️ db.json
-├── 🗂️ db.json
-├── 🗂️ package-lock.json
-├── 🗂️ package.json
-├── 📁 src
-│ ├── 📁 config
-│ │ ├── 🟨 db.js
-│ ├── 📁 controller
-│ │ ├── 🟨 todoController.js
-│ ├── 📁 error
-│ ├── 📄 eslint.config.mjs
-│ ├── 📁 model
-│ ├── 📁 routes
-│ │ ├── 🟨 routes.js
-│ ├── 📁 schema
-│ ├── 🟨 server.js
 
-```
 ```
 ├── 📁 database
 │ ├── 🗂️ db.json
