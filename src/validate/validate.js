@@ -18,7 +18,7 @@ export default class todoValidations {
             next(err);
         }
     }
-    
+
     // validate update to-do task till updating time
     validateUpdateRequest = async (req, res, next) => {
         try {
@@ -33,16 +33,16 @@ export default class todoValidations {
             next(err);
         }
     }
-    validateSearchRequest = async (req,res,next) => {
+    validateSearchRequest = async (req, res, next) => {
         try {
-            const validTodo = await searchTaskSchema.validate(req.body,{
+            const validTodo = await searchTaskSchema.validate(req.body, {
                 abortEarly: false,
                 stripUnknown: true,
             })
             console.log("searching to do validation successful", validTodo);
             next();
         } catch (err) {
-            console.log("validation error during search time" , err);
+            console.log("validation error during search time", err);
             next(err);
         }
     }
